@@ -25,7 +25,7 @@
     <section id="content">
         <i class="fal fa-planet-ringed"></i>
         <h1 class="main_title">우주과학연구회</h1>
-        <h4 class="main_description">Soongsil Univ. club since 1980</h4>
+        <h5 class="main_description">Soongsil Univ. club since 1980</h5>
     </section> 
     <section id="about">
         <ul class="about_box">
@@ -44,7 +44,7 @@
             <h2 class="about_title_left">What we have?</h2>
             <div class="text_box" style="height:420px;">
                 <li class="have_list">
-                    <p class="about_description"><i class="fa fa-star"> </i>넓은 동아리방 <br> <h4>우과연 동방은 그 중에서도 최고!</h4></p>
+                    <p class="about_description"><i class="fa fa-star"> </i>넓은 동아리방 <br> 우과연 동방은 그 중에서도 최고!</p>
                     <p class="about_description"><i class="fa fa-star"></i> 2층 침대 <br>  외로운 공강시간, 날 따스하게 안아줄</p>
                     <p class="about_description"><i class="fa fa-star"></i> 전기장판 <br>  시린 겨울, 날 포근하게 뎁혀줄</p>
                     <p class="about_description"><i class="fa fa-star"></i> 베개 및 이불 <br> 여기가 동방인지 내방인지 헷갈릴 지경</p>
@@ -53,34 +53,61 @@
                 <img src="imgs/click-removebg-preview.png" class="click_img"alt="">
             </div>
         </ul>    
-        <ul class="equip_list">
-            <h3 class="equip_list_btn">장비 현황</h3>
-            <div class="equip_text_box">
-            <li class="equipments_refraction">
-                <h3 style="margin:30px;">굴절망원경</h3>
-                
-                <li class="equipments_refraction_item">
-                    <p class="item_title"> Celestron inspire 90az <i class="fad fa-telescope"></i></p>
-                    <p class="item_description">D = 90mm, FL = 1200mm</p>
+        <ul class="equipments">
+            <div class="equip_list">  
+                <h3 class="equip_list_title">장비 현황</h3>
+                <div class="equip_text_box">
+                    <li class="equipments_refraction">
+                        <h3 style="margin:30px;">굴절망원경</h3>
+
+                    <li class="equipments_refraction_item">
+                        <p class="item_title"> Celestron inspire 90az <i class="fad fa-telescope" id="celestron__btn"></i></p>
+                        <p class="item_description">D = 90mm, FL = 1200mm</p>
+                    </li>
+                    <li class="equipments_refraction_item">
+                        <p class="item_title">Skywatcher Evostar 120ED(구형) <i class="fad fa-telescope" id="skywatcher__btn"></i></p>
+                        <p class="item_description">D = 120mm, FL = 1200mm</p>
+                    </li>
+                    </li>
+                    <li class="equipments_reflection">
+                        <h3 style="margin-top: 80px;">반사망원경</h3>
+                        <li class="equipments_reflection_item">
+                            <p class="item_title">Vixen R130sf <i class="fad fa-telescope" id="vixen__btn"></i></p>
+                            <p class="item_description">D = 130mm, FL = 650mm</p>
+                        </li>
+                    </li>
+                <li class="equipments_etc">
+                    <h3 style="margin: 50px;">이 외 장비들</h3>
+                    <li class="equipments_etc_item"><p> 쌍안경</p></li>
+                    <li class="equipments_etc_item"><p> Canon EOS 500d + 망원렌즈</p></li>
                 </li>
-                <li class="equipments_refraction_item">
-                    <p class="item_title">Skywatcher Evostar 120ED(구형) <i class="fad fa-telescope"></i></p>
-                    <p class="item_description">D = 120mm, FL = 1200mm</p>
-                </li>
-            </li>
-            <li class="equipments_reflection">
-                <h3 style="margin-top: 80px;">반사망원경</h3>
-                <li class="equipments_reflection_item">
-                    <p class="item_title">Vixen R130sf <i class="fad fa-telescope"></i></p>
-                    <p class="item_description">D = 130mm, FL = 650mm</p>
-                </li>
-            </li>
-            <li class="equipments_etc">
-                <h3 style="margin: 50px;">이 외 장비들</h3>
-                <li class="equipments_etc_item"><p> 쌍안경</p></li>
-                <li class="equipments_etc_item"><p> Canon EOS 500d + 망원렌즈</p></li>
-            </li>
+                </div>
             </div>
+
+            <div class="celestron_imgs" id="planet_img">
+                <h3 class="img_title">Celestron으로 찍은!</h3>
+                <h4>달</h4>
+                <img src="imgs/moon.png" class="moon_img" alt="">
+                <h4>오리온 성운</h4>
+                <img src="imgs/orion.jpg" class="orion_img" alt="">
+            </div>
+
+            <div class="skywatcher_imgs" id="planet_img">
+                <h3 class="img_title">SkyWatcher로 찍은!</h3>
+                <h4>달</h4>
+                <img src="imgs/moon.png" class="moon_img" alt="">
+                <h4>오리온 성운</h4>
+                <img src="imgs/orion.jpg" class="orion_img" alt="">
+            </div>
+
+            <div class="vixen_imgs" id="planet_img">
+                <h3 class="img_title">Vixen으로 찍은!</h3>
+                <h4>달</h4>
+                <img src="imgs/moon.png" class="moon_img" alt="">
+                <h4>오리온 성운</h4>
+                <img src="imgs/orion.jpg" class="orion_img" alt="">
+            </div>
+
         </ul>
         <ul class="about_box">
             <h2 class="about_title_right">When we meet?</h2>

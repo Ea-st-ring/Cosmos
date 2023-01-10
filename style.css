@@ -4,6 +4,7 @@
 
 :root{
     --color-white: white;
+    --color-bg:rgba(128, 128, 128, 0.541);
 
     --font-enormous:100px;
     --font-title:70px;
@@ -90,6 +91,11 @@ h3{
 }
 
 h4{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+h5{
     font-size: 14px;
     font-weight: 500;
     margin-left: 45px;
@@ -228,7 +234,7 @@ section {
 
 .text_box{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.541);
+    background-color:var(--color-bg);
     width: 400px;
     height: 120px;
     margin-left: var(--margin-text-left);
@@ -269,7 +275,7 @@ section {
 .text_box_right {
     display: flex;
     justify-content: end;
-    background-color: rgba(128, 128, 128, 0.541);
+    background-color: var(--color-bg);
     width: 400px;
     height: 120px;
     position: absolute;
@@ -318,13 +324,23 @@ section {
     align-items: center;
     padding: 0;
     margin-top: 400px;
-    display : none;
+    display: none;
+    transition: all 500ms ease-in-out;
 }
 
 .equip_list.active{
     display: flex;
     animation: fadeInDown 1000ms;
+    width: fit-content;
+    margin: auto;
 }
+
+.equip_list.active.moveLeft{
+    animation: none;
+    transform: translateX(-680px);
+    transition: 500ms;
+}
+
 
 .fa-telescope{
     padding-right: 30px;
@@ -336,14 +352,9 @@ section {
 }
 
 
-.equip_list_btn{
-    
-}
-
-
 .equip_text_box{
     display: flex;
-    background-color: rgba(128, 128, 128, 0.541);
+    background-color: var(--color-bg);
     max-width: fit-content;
     height: 950px;
     flex-direction: column;
@@ -358,6 +369,61 @@ section {
     margin: 20px 40px;
     line-height: 50px;
 }
+
+.img_title{
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+@keyframes fade_in_anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#planet_img{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    position: relative;
+    bottom: 1007px;
+    align-items: center;
+    width: fit-content;
+    height: 800px;
+    margin: auto;
+    background-color: var(--color-bg);
+    display: none;
+    animation: fade_in_anim 1000ms;
+}
+
+#planet_img.active{
+    display: flex;
+}
+
+
+#planet_img::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리*/
+}
+
+
+.moon_img{
+    object-fit: cover;
+    width: 400px;
+    height: 600px;
+    margin: 50px;
+    margin-top: 10px;
+}
+
+.orion_img{
+    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    margin: 50px;
+}
+
 
 .equipments_reflection_item{
     margin: 50px;
