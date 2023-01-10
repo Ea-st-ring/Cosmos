@@ -291,6 +291,8 @@ section {
     font-size: 36px;
     margin-top: 10px;
     margin-left: 45px;
+    padding-bottom: 30px;
+    padding-right: 30px;
 }
 
 .fa-scroll:hover {
@@ -324,7 +326,14 @@ section {
     animation: fadeInDown 1000ms;
 }
 
+.fa-telescope{
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
 
+.fa-telescope:hover{
+    transform: scale(1.1);
+}
 
 
 .equip_list_btn{
